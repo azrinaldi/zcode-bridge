@@ -1,5 +1,10 @@
 # zcode-bridge
 
+[![release](https://img.shields.io/github/v/release/azrinaldi/zcode-bridge?color=blue)](https://github.com/azrinaldi/zcode-bridge/releases/latest)
+[![license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![go](https://img.shields.io/github/go-mod/go-version/azrinaldi/zcode-bridge)](go.mod)
+[![deps](https://img.shields.io/badge/dependencies-stdlib%20only-informational)](go.mod)
+
 OpenAI- and Anthropic-compatible HTTP front end for the **ZCode start-plan
 quota** (GLM-5.3 / GLM-5.3-Flash). Point any harness that speaks
 `/v1/messages` or `/v1/chat/completions` at it, and calls are metered against
@@ -10,7 +15,18 @@ login's own credential.
 
 Single static Go binary, standard library only, no runtime dependencies.
 
-## Quick start
+## Install
+
+Prebuilt binaries (linux/darwin/windows, amd64/arm64) are on the
+[releases page](https://github.com/azrinaldi/zcode-bridge/releases/latest):
+
+```sh
+curl -fsSL -o zcode-bridge \
+  https://github.com/azrinaldi/zcode-bridge/releases/latest/download/zcode-bridge-linux-amd64
+chmod +x zcode-bridge && ./zcode-bridge --version
+```
+
+Or build from source (Go 1.27+, no other dependencies):
 
 ```sh
 go build -o zcode-bridge ./cmd/zcode-bridge

@@ -13,3 +13,6 @@ data/*-jwt.json
 # OS
 .DS_Store
 Thumbs.db
+
+# Release staging
+/dist
