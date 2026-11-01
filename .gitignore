@@ -1,0 +1,15 @@
+# Secrets — never commit
+plan-jwt.json
+data/accounts.json
+data/*-jwt.json
+*.jwt
+.env
+
+# Build output
+/zcode-bridge
+/zcode-bridge.exe
+/zcode-bridge-*
+
+# OS
+.DS_Store
+Thumbs.db
