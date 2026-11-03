@@ -16,3 +16,7 @@ Thumbs.db
 
 # Release staging
 /dist
+
+# Local credentials and helper scripts — never commit
+credentials.js
+scripts/
